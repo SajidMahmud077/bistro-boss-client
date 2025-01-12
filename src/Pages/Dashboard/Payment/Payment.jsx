@@ -4,8 +4,6 @@ import { Elements } from "@stripe/react-stripe-js";
 import CheckOutForm from './CheckOutForm'
 
 
-
-
 const stripePromise=loadStripe(import.meta.env.VITE_Payment_Gateway_Pk);
 const Payment = () => {
   return (
@@ -14,7 +12,6 @@ const Payment = () => {
       <div>
         <Elements stripe={stripePromise}>
           <CheckOutForm/>
-
         </Elements>
       </div>
     </div>
